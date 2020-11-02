@@ -127,8 +127,8 @@ $(function () {
 	});
 
 	// Get data about our products from products.json.
-	//$.getJSON( "http://gist.githubusercontent.com/jmwind/87e92d5c738d7ccabc69cee5ee41dd4b/raw/1deaba7639ad2aab15f830ab04f912e6f16fa9e0/products.json", function( data ) {
-	$.post("https://nepean-hotspurs-b2002-eagles.myshopify.com/api/graphql.json", query_string, function(response) {
+	$.getJSON( "https://auchan-storefront.herokuapp.com/products.json", function( data ) {
+	//$.post("https://nepean-hotspurs-b2002-eagles.myshopify.com/api/graphql.json", query_string, function(response) {
 		// Write the data into our global variable.
 		// products = data;
 		products = convertGraphQLtoProducts(response.data);
