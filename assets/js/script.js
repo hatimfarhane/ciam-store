@@ -130,8 +130,8 @@ $(function () {
 	$.getJSON( "https://auchan-storefront.herokuapp.com/products.json", function( data ) {
 	//$.post("https://nepean-hotspurs-b2002-eagles.myshopify.com/api/graphql.json", query_string, function(response) {
 		// Write the data into our global variable.
-		// products = data;
-		products = convertGraphQLtoProducts(response.data);
+		products = data;
+		//products = convertGraphQLtoProducts(response.data);
 
 		// Call a function to create HTML for all the products.
 		generateAllProductsHTML(products);
