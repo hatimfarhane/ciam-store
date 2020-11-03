@@ -10,7 +10,7 @@
 	
 	<meta name="salesforce-community" content="https://hatim-developer-edition.eu43.force.com/ciam">
     <meta name="salesforce-client-id" content="3MVG95NPsF2gwOiMMf2G1lq6L50JgMAPW.xV45..vdTaTkQf1x1zUgTZxKfMmoaYZTg0tZt1ONwmF0znc35so">
-    <meta name="salesforce-redirect-uri" content="https://auchan-storefront.herokuapp.com/">
+    <meta name="salesforce-redirect-uri" content="https://auchan-storefront.herokuapp.com/_callback">
     <meta name="salesforce-mode" content="modal">
     <meta name="salesforce-target" content="#sign-in-link">
     <meta name="salesforce-save-access-token" content="true">
@@ -111,6 +111,34 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
 	<script src="assets/js/script.js"></script>
+	
+	<script>
+		function onLogin(identity) {
+			console.log("hello");
 
+			var targetDiv = document.querySelector(SFIDWidget.config.target);   
+			var img = document.createElement('img'); 
+			img.src = identity.photos.thumbnail; 
+			img.className = "sfid-avatar";
+
+			var username = document.createElement('span'); 
+			username.innerHTML = identity.username;
+			username.className = "sfid-avatar-name";
+
+			var iddiv = document.createElement('div'); 
+			iddiv.id = "sfid-identity";
+			iddiv.appendChild(img);     
+			iddiv.appendChild(username);        
+
+			targetDiv.innerHTML = '';
+			targetDiv.appendChild(iddiv);   
+		}
+
+		function onLogout() {
+			SFIDWidget.init();
+		}
+
+	</script>
+	
 </body>
 </html>
