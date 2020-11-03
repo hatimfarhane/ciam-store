@@ -2,8 +2,10 @@
 <html>
 
 <head lang="en">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<title>Hatim Shopify Custom Store</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
 	<link href="assets/css/styles.css" rel="stylesheet">
@@ -20,15 +22,16 @@
     <meta name="salesforce-logout-handler" content="onLogout">
     <meta name="salesforce-mask-redirects" content="true">
 	<link href="https://hatim-developer-edition.eu43.force.com/ciam/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
-    <script src="https://hatim-developer-edition.eu43.force.com/ciam/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
+    <script src="https://hatim-developer-edition.eu43.force.com/ciam/servlet/servlet.loginwidgetcontroller?type=javascript_widget"></script>
 </head>
 
 <body>
 
 	<header class="compact">		
-		<h1><a href="#">Hatim TEST Shopify Custom Storefront</a></h1>
+		<h1><a href="#">Auchan Storefront</a></h1>
+		<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
 	</header>
-	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
+	
 	<div class="main-content">
 		<div class="all-products page">
 			<div class="filters">
