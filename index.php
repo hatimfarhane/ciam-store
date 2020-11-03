@@ -28,7 +28,7 @@
 	<header class="compact">		
 		<h1><a href="#">Hatim TEST Shopify Custom Storefront</a></h1>
 	</header>
-
+	<div id="sign-in-link" style="position: absolute; top: 20px;right: 20px;"></div>
 	<div class="main-content">
 		<div class="all-products page">
 			<div class="filters">
