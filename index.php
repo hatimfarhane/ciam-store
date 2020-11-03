@@ -7,6 +7,20 @@
 	<title>Hatim Shopify Custom Store</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
 	<link href="assets/css/styles.css" rel="stylesheet">
+	
+	<meta name="salesforce-community" content="https://hatim-developer-edition.eu43.force.com/ciam">
+    <meta name="salesforce-client-id" content="3MVG95NPsF2gwOiMMf2G1lq6L50JgMAPW.xV45..vdTaTkQf1x1zUgTZxKfMmoaYZTg0tZt1ONwmF0znc35so">
+    <meta name="salesforce-redirect-uri" content="https://auchan-storefront.herokuapp.com/">
+    <meta name="salesforce-mode" content="modal">
+    <meta name="salesforce-target" content="#sign-in-link">
+    <meta name="salesforce-save-access-token" content="true">
+    <meta name="salesforce-forgot-password-enabled" content="true">
+    <meta name="salesforce-self-register-enabled" content="true">
+    <meta name="salesforce-login-handler" content="onLogin">
+    <meta name="salesforce-logout-handler" content="onLogout">
+    <meta name="salesforce-mask-redirects" content="true">
+	<link href="https://hatim-developer-edition.eu43.force.com/ciam/servlet/servlet.loginwidgetcontroller?type=css" rel="stylesheet" type="text/css" />
+    <script src="https://hatim-developer-edition.eu43.force.com/ciam/servlet/servlet.loginwidgetcontroller?type=javascript_widget" async defer></script>
 </head>
 
 <body>
