@@ -12,7 +12,8 @@
 	
 	<meta name="salesforce-community" content="https://hatim-developer-edition.eu43.force.com/ciam">
     <meta name="salesforce-client-id" content="3MVG95NPsF2gwOiMMf2G1lq6L50JgMAPW.xV45..vdTaTkQf1x1zUgTZxKfMmoaYZTg0tZt1ONwmF0znc35so">
-    <meta name="salesforce-redirect-uri" content="https://auchan-storefront.herokuapp.com/_callback.html">
+	<meta name="salesforce-redirect-uri" content="https://auchan-storefront.herokuapp.com/_callback.html">
+	<meta name="salesforce-register-starturl-enabled" content="true">
     <meta name="salesforce-mode" content="modal">
     <meta name="salesforce-target" content="#sign-in-link">
     <meta name="salesforce-save-access-token" content="true">
